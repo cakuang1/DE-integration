@@ -20,5 +20,12 @@ DAG Tasks:
 5. Load silver data to [AWS Redshift](https://aws.amazon.com/redshift/).
 6. Load silver data to [AWS RDS](https://aws.amazon.com/rds/) for future projects.
 7. and 8. Transform and test data through [dbt](https://docs.getdbt.com/) in the warehouse.
-<h1>Architecture</h1>
+## What technologies are being used?
+- Cloud: [Google Cloud](https://cloud.google.com)
+- Infrastructure: [Terraform](https://www.terraform.io/)
+- Orchestration: [Prefect](https://www.prefect.io/)
+- Data lake: [Google Cloud Storage](https://cloud.google.com/storage)
+- Data transformation: [DBT](https://www.getdbt.com/)
+- Data warehouse: [BigQuery](https://cloud.google.com/bigquery)
+- Data visualization: [Google Looker Studio](https://cloud.google.com/looker)
 <h1>Architecture</h1>
