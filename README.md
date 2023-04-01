@@ -9,5 +9,16 @@ Pipeline that extracts data from <a href = 'https://eodhistoricaldata.com/financ
 
 
 <h1>Architecture</h1>
+
+
+DAG Tasks:
+
+1. Scrape data from [Crinacle's](https://crinacle.com/) website to generate bronze data.
+2. Load bronze data to [AWS S3](https://aws.amazon.com/s3/).
+3. Initial data parsing and validation through [Pydantic](https://github.com/pydantic/pydantic) to generate silver data.
+4. Load silver data to [AWS S3](https://aws.amazon.com/s3/).
+5. Load silver data to [AWS Redshift](https://aws.amazon.com/redshift/).
+6. Load silver data to [AWS RDS](https://aws.amazon.com/rds/) for future projects.
+7. and 8. Transform and test data through [dbt](https://docs.getdbt.com/) in the warehouse.
 <h1>Architecture</h1>
 <h1>Architecture</h1>
